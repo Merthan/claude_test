@@ -221,7 +221,7 @@ Planned but should be easy
 iPhone was just a POC, LLM could build most of these pretty easily. Syncing slides for a reliable "jump to slide" (where e.g. 20 back events need to be sent) might be harder (or not compatible with all programs). Notes is not implemented but server allows communication between companion and app, so companion could read e.g. pptx, extract notes per slide and send those to phone (bluetooth should also work for that).
 10. What does the current UI flow look like, from install to first slide change?
 UI is not finalized but in general because volume button controls MIGHT not be allowed on Apple App Store those would be added later in an update (with a risk of being rejected, but its not a dealbreaker if volume buttons dont work).
-In general the gyro/laser functionality works very well and its activated by long pressing a part of the screen (which resets the gyro to 0, even changing the rotation works flawlessly). If you imagine the phone held in a relaxed way on the side, The place where the thumb is closest to (top right corner) would be next slide, moving the thumb towards your arm would be the place you hold for laser control/spotlight while held. So the two important actions are easiest to press, screen is in a very dimmed/minimal state. MAYBE notes are added later to the bottom of the landscape mode if required and MAYBE laser just starts with a "next slide" long press instead (requiring no additional thumb movement). Previous slide is on the bottom, harder to reach because its pressed more rarely. 
+In general the gyro/laser functionality works very well and its activated by long pressing a part of the screen (which resets the gyro to 0, even changing the rotation works flawlessly). If you imagine the phone held in a relaxed way on the side, The place where the thumb is closest to (top right corner) would be next slide, moving the thumb towards your arm would be the place you hold for laser control/spotlight while held. So the two important actions are easiest to press, screen is in a very dimmed/minimal state. MAYBE notes are added later to the bottom of the landscape mode if required and MAYBE laser just starts with a "next slide" long press instead (requiring no additional thumb movement). Previous slide is on the bottom, harder to reach because its pressed more rarely. On Android of course the volume buttons are mainly used and the screen might be completely off (optionally if wanted)
 11. Which markets and languages first: Germany, the US, other EU countries?
 All I guess
 12. Do you plan accounts or logins, or should everything work without one?
@@ -236,3 +236,11 @@ None currently
 No, no target. But I can easily be done before december I assume if I want
 18. Would you be willing to work full-time on this for 12 months if a stipend paid for it?
 Yes
+
+Really think about the big decisions here, you dont need to get lost in technical details that I'll figure out anyways. But rather - is the name good enough, how much money do you think I'll earn, is the market good for this, will people immediately vibe code alternatives etc. 
+Many big questions, your answer will be very important for future chats and progress so really think about it in depth. You can create multiple Briefing .md files if you want to seperate things by topic. 
+
+Do NOT scaffold project files, install dependencies, or write application source code.
+
+Do NOT dump the full response into the terminal conversation.
+Structure your analysis into a dedicated `docs/` directory
