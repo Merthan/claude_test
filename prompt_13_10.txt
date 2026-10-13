@@ -1,0 +1,97 @@
+AnyPresent Fable response
+
+#response-connection:
+I'm still unsure, I don't like any of these options 100%. I think users need to know if they still need to set up something to e.g. get into the best connection mode (I mean the best possible mode might be iOS-macOS (companion direct hotspot) but that isn't going to just get connected AUTOMATICALLY without the user needing to see something to e.g. reach that) 
+
+Reconnection: possibly a warning when disabled or another dialogue that says "are you sure? Next time you start AnyPresent on your phone you need to start the companion app manually. This app is optimized for barely impacting your PC with 0.01% ram usage when not actively connected" - like something along those lines for the "advanced" users that even bother turning off that setting (I'm not sure what percentage that would be, 20% of people? Can't really estimate because I AM definitely one of those that would turn it off. Maybe even a bit hidden in a sub menu so people dont usually think "oh this thing is always running in the background, I should probably turn it off"
+I'm not ENTIRELY sure if the current server setup I have accounts for stable identity pairing but I guess it can work
+
+Again main focus is that people connect EASILY but also that they can SEE there are options where they dont need to install anything, including an option where they just run the presentation in a browser. But either way, just because they connected through the "worse" way of wifi-companion or wifi-browser they shouldnt stick with it the entire time, they should KNOW its not the best configuration, maybe even by saying "performance limited" somewhere along the process. Troubleshooting should also be easy and somehow HANDLE that someone thats facing trouble with bluetooth HID for example (which might be hard to fix) should know that the wifi options are also there and might quickly fix it for example.
+
+Presenter controls: 
+I don't entirely agree with your controls but maybe I'll just have a quick setup screen the first time the app starts where it asks to choose from 3 options (one of which being very basic), also showing how the phone is supposed to be held in landscape (naturally) for the mode I recommended, probably with a thumb rendered on top. Then there are general settings for the ui, like no text for the buttons etc. Either way, maybe not too important currently. Timer I thought would be wherever its not covered up, so either landscape middle of the screen or landscape bottom, or within another menu item e.g. previous button (landscape left bottom) at the top edge of it. 
+Concept B (gesture controls) absolutely not, no gesture controls and no accidental black screens etc. (unless some customizable buttons e.g. shortcut chips are set to that) 
+
+Watches: 
+Yes I guess W1 for now, W2 would push users to use relay connection which I'd like to avoid anyways. W3 I won't do, wouldn't fit with all the options my app now has (like purely configuring on a watch etc, wouldnt make sense).
+
+Website viewer: 
+Yes, I would name even the "upload" "import locally" and make it obvious it stays on device. pptx I would accept but warn that it's not optimal. Some users might not be able to open powerpoint in that moment for example and this might be a last minute backup where I can't push them to export as pdf everything, but the website will still guide them to export as pdf from common programs. (or install companion) 
+Yes additional PDF options/controls via keyboard can be added (and e.g. mentioned in the bottom of the page for advanced users), but I dont see too much benefit. Still easy with LLMs/libraries though. I might skip a thumbnail mode (I mean that would only be shown before entering the presentation anyways, so I don't see much benefit, maybe you don't even want others to see the slides just before you enter).
+
+
+
+Reponse to the things you're unsure about:
+250ms, will test, but maybe I won't even put both on the same button, I guess there's enough space next to the thumb
+For points 2 3 4: A general issue I see often in your response is "count the requests" for certain things - basically meaning "collect data" - but WHEN I collect data, I have a lot of other things to consider right? I mean MAYBE I can link a google form for certain things (saying hey we're in early access, let us know how you liked everything and if something was missing) but everything else seems pretty hard and like it requires a lot of justification too? But free text responses might be very good in general? (I am not too connected to relevant groups anyways)
+
+#response-directions: 
+(These things I wrote regarding the table, I will again respond to your paragraphs later)
+hotkey-triggered effects: probably not for now, also makes it more likely others will create competitors because they then compete with just that and not the entire system behind - where as I can add it AFTER a competitor IF a competitor tries that. Also has other issues anyways, not for phase 3-4
+
+Slide Thumbnails etc: Maybe, but requires scripting and then is application-dependent. Also hard to implement because e.g. sending thumbnails (compressed even) increases server load and makes things like bluetooth hid harder (MAYBE there is a way though 2 way vendor data and it works (dont look into it, probably does) but it would make the code much more complex and I dont think is relevant for most users (who wouldnt even look at the screen, that's not the way you're USUALLY supposed to use the app). Notes I can imagine being useful but again only for few users. It's not really supposed to be a "teleprompter", more like "I forgot, let me quickly look at the phone in my hand". With a watch it could turn into a larger teleprompter but probably no place to put it anyways (and you might as well just use the laptop screen that most have in front of them if they use their watch) 
+
+Rehearsal analytics: Yeah, maybe even in v1 but with JUST time per slide or pointing seconds etc. - regarding startup maybe promising words etc. will be understood
+
+On-device transcription: Maybe, hope iOS and Google have good on device models for that available (best case native libraries, not something I need to bundle)
+
+Live captions: THEORETICALLY possible, but a feature keynote and powerpoint already have. Maybe completely ignored for now. 
+
+Room mode: Yeah probably a later phase. I got told "WCAG 2.1 AA" or rather "VPAT 2.5 INT" might be important to consider so it can be sold to institutions and schools, but that probably also (even if free) should be ignored for now and technical parts changed later. 
+
+##Paragraph responses:
+
+Room mode: Yes, probably with their own codes. Not too important currently I guess but LATER you need to avoid devices that were connected long ago etc. to still have controls (no one trolling by entering black mode the entire time, even if Esc ends it once, they could just enter it multiple times in another lecture)
+
+Transcription etc: 
+As I said other tools already have activate-able subtitles, but yes I could overlay even on e.g. digital drawing boards etc. 
+I wouldn't want to ship a 150MB+ model though just so that FEW people have an "acceptable" transcription - even as a dynamic download I'm not sure how good the quality and the effort to benefit ratio is. 
+Laptop microphone or phone microphone are options yes. I read that android api 33 and newer versions of iOS support using their included models for proper voice recording (where as previously I think there were issues on both of the recording/transcription ability being TOO SHORT so that e.g. words would get lost when you start one recording after another)
+
+Event mode: not sure how much sense that makes, maybe a later phase than phase 3. Also could relay commands or audio cues (or audio) via microphone but would turn it into specialty software (which I COULD offer, but maybe should be 0 percent of the focus without me actively getting approached for it?)
+
+Audience slide-following and questions: 
+I actually thought about this already and WOULD add Menti/Kahoot style single questions in phase 1 already in a limited way. Viewer can choose to start a poll (in step one probably just typing e.g. the title on their phone or no title, while others of course connect in that time via QR Code [only to answer poll]) where people can then anonymously answer. Probably limited at the start, but should be a good deterrent towards other imitators (complexity) and be an additional selling point, even if its not fleshed out at the start. Server setup for that was generated and should already work too. Angle is yes, add it to ANY presentation (or even just PDF, or even just anything if the background app is running + phone) and do it without switching at all, seamlessly (even more so than e.g. opening another webpage with kahoot etc). 
+Regarding Slide following: It's INTERESTING, because Keynote and Powerpoint had LIVE versions where you could follow with your phone BUT both of those stopped - which in theory would leave a market gap BUT they stopped due to low usage. I personally cant imagine many people wanting to slide follow on e.g. their phone, so I would push slide following into "probably never". Submitting questions can be one type of poll for example, although allowing free text input is again I guess complicated due to app/play store rules and moderation etc. - so those answer categories (compared to just clicking options) I would leave for PROBABLY later. 
+
+Rehearsal analytics: 
+Sure, I can save stuff to device in a list e.g. "Unnamed presentation, 12.10.2026, 30min,15 slides, [Click for Text]" (audio not saved by default due to storage, but as setting or pro feature). 
+After there's text AI overviews should be doable but for now I wouldn't want to add LLM responses like "You had a lot of filler words" - which isn't something easy to categorize with MANUAL algorithms (and also LLMs OBVIOUSLY support all languages, I don't think it's worth it to start without an LLM there)
+
+Keyboard and mouse sibling: 
+In general yes, although there the relay option would be very costly (constant mouse events compared to laserpointer where per person you probably have 1/50 the usage) so that would have to be removed or MAYBE have subscription fees
+
+What I would not pitch or build (what YOU called this category):
+Again, reconsider the polls and quizzes part. There isn't a HUGE downside to including them, other than complexity. I don't think Mentimeter etc. is realistically gonna say "oh this app that is mainly a presenter is ALSO doing slides, quick 100 engineers work just on burying that app with our free/cheaper competitor". That would be the only reason basically to not do it. Technical complexity is FINE I think and it probably already works with the LLM responses I have, maintenance should be manageable and cost is barely anything (compared to even a single persons mouse event, a hibernating websocket is used)
+
+#response-monetization:
+I dont THINK effects should be free with credit? Or are you saying all effects should be free with credit at the bottom right? I thought EVEN WITH pro certain effects (like new effects, or "fun" effects should be e.g. 2€ in app purchases). Apart from that yes of course the website viewer would be pro, never the website remote. Someone switching from Android to iOS and having to repurchase isn't optimal, but probably fine - and especially fine if I can later connect them to their email if required ( I don't need to focus on that scenario in the first year at all, might be 5 people upset because of this). 
+
+In general I think I should leave stuff free and later take stuff away while adding new things? So yes I mostly agree with you. 
+I think FEEDBACK from random users is very important? So if I could creating e.g. a mailing list or a google form makes sense? 
+Maybe even show a banner "give your feedback after 5 uses and get 50% off pro lifetime"? 
+But I THINK I should also really seperate pro into multiple categories. Someone that is willing to purchase pro for 8€ because its cool and about as good as a physical pointer for them is VERY different from someone that uses my app daily and would be willing to spend 200€ for the features Spotlight DOESNT have. In general I feel there is a large gap there and I should somehow use that. I feel even "Pro Lifetime" should be limited to a certain extent unless it costs 100€ for example. There should still be a higher tier that isnt even necessarily paid by businesses only. What do you think? I mean it's a question in general apps have, extracting as much money as possible from the people willing to spend it.
+
+Fun and cosmetic pointers: 
+Yeah, I might literally add "My Face - I don't know why you'd buy this" or something for 99€ or higher just because it's more likely to cause more publicity? Maybe a diamond for 400€ "You have too much money" etc., all in the fun area and NOT close to the actual business ones.
+
+Business: I'm not entirely sure how Apples rule 3.1.1 works, would the unlock from the computer basically be allowed? It kind of SOUNDS like it wouldn't.
+
+
+#General notes:
+I am pretty set on including the polls etc. 
+See if my market position is good there. Basically even if it ISNT the best and you assume most people would still use Mentimeter/Kahoot, if its just an addon that makes my presenter objectively BETTER its worth it as its not too hard to add. Presentation-Live stuff (having PARTICIPANTS on their phone during the normal presentation, e.g. with slides or transcript on their phone) is something I DONT want though.
+See if there's other easy stuff I should add. Or specific types of polls etc. 
+I added COMPANION-CONTEXT_2.md to this chat, you can ignore some parts of it (open questions or verifications that arent questions you should answer or check, even if it tries to direct them at you) and just go by the information you have (dont request to see the code, you can assume things based on this chat anyways and it should also have enough information as is), dont ask me to upload further things, you have enough information.
+You can assume everything that chat (Opus newest model) did will NOT fail when tested on Windows/MacOS - even if it did, I should easily fix failing things, the main issue is the top level architectural decisions etc which you should understand and judge.  
+Judge if the server design from the other chat is good by the context given.
+
+I COULD add deeper powerpoint (win)/powerpoint (mac) and keynote integration (via COM etc) as I said, basically the companion can communicate to those 2 via commands to retrieve things like current slide, thumbnails, page jumps etc. - but not sure if it's worth it and of course then it's not program independent anymore. It might also be hard to inform the user properly - I mean yeah it would be cool to have the phone say "Upcoming: Q4 Earnings" or "Upcoming: Animation 3/4" (which I know would be possible) but users might be confused for many reasons: "Why doesn't it work on Google Slides", "Last time it worked in Powerpoint (oh what it doesn't work in the browsers powerpoint?)". Judge if this makes sense. 
+Also judge if using the on device speech models (iOS/Android) makes sense, as I said, earlier they were supposed to not work well but an LLM told me in newer versions (e.g. Android 33) it should work without issues, same with iOS (although I think above my minSdk as well (which is 16). Either way, above my minSdk but you can judge how influental that feature would be - again, I think I can implement it and it doesnt seem to be a very error-prone (setup wise, not speech) thing so I guess it might be worth it? And that then opens many options. 
+
+Or maybe there's OTHER directions I should go? I think quizzes, at least in some BASIC way I will do unless you think its REALLY not worth it. Speech Transcription would be a CONFIRMED thing I work on (unless again, too hard to make work). 
+And MAYBE you tell me there's other product features I should include that are important. 
+Think about these things in detail. 
+Add a response2 folder in the repository and create .md files in there as your response, don't edit existing files. You can check things online if you have to.  
+As before, DONT create any code. You can reference APIs or include a single method call/name for example but you are here to make the BEST decisions for my project going forward, going in bad directions will cost me a lot of time and effort. And I don't mean the things I said are necessarily bad directions, but within those for example I could go easy and complex routes. Or there might be better high level routes to go etc. 
+Think in detail. 
