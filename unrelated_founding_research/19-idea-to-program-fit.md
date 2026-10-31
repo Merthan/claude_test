@@ -1,4 +1,6 @@
-# Which idea fits which program (draft matrix, refined in the summary)
+# Which idea fits which program (matrix)
+
+The recommended pairings and the combination I like most are in `README.md` ("Which idea goes where"). This matrix is the wider view.
 
 Legend: ✅ strong fit · ◐ possible with framing · ✗ poor fit / excluded. "OSS" = must be open source.
 
