@@ -27,7 +27,7 @@ Status 31 Oct 2026. Sources are search summaries of the cited official documents
 - Students must have completed ≥ half of their Studienleistungen (waived when a Master builds on a finished Bachelor).
 - Host = any German Hochschule/Forschungseinrichtung with a Gründungsnetzwerk; it signs the Stipendiatenverträge and files with PtJ **before** the project starts. No rule found that it must be *your* university — but no confirmation that externals are accepted either. Ask.
 - Existing business: the exact "noch nicht gegründet" wording and its treatment of a small existing Gewerbe/app income was **not verified**. Disclose Bluetooth Presenter openly; the venture you apply with must not be founded yet.
-- Tax-free status (§3 Nr. 44 EStG) and side-job hour limits: not verified this session (see `17-rules-bafoeg-taxes-legal.md`).
+- Tax: guides call the EXIST stipend taxable (Anlage SO; reserve 15–30 %); no source applies § 3 Nr. 44 EStG to it — do not plan on tax-free. Side-job hour limits not verified. See `17-rules-bafoeg-taxes-legal.md`.
 
 ## What was NOT found
 - Approval rates, processing times, annual approvals, reviewer attitudes to solo software projects, Ideenpapier requirements. (The brochure "EXIST 2024" may hold annual figures: https://exist.de/wp-content/uploads/2025/07/BMWE_Exist2024_bf_final_klein.pdf)

@@ -37,3 +37,23 @@ Short answers are fine. "Unsure" is a valid answer. Numbers refer to what each a
 22. Have you **applied anywhere before** (EXIST, BSS, Prototype Fund, Antler, accelerators)? Outcomes?
 23. Are you already **in contact** with any Berlin incubator besides TU (HTW, BHT, HWR Startup Incubator, Charité/BIH, Vision Health Pioneers, Humboldt-Innovation, FU Profund)?
 24. Would you consider a **non-founding stipend** as bridge money (e.g., Deutschlandstipendium €300/month at TU, Google Summer of Code, LFX Mentorship) while preparing the real application?
+
+---
+
+## Your answers (31 Oct 2026) and what they change
+1. Bachelor finished **Oct 2026** → EXIST 5-year window is wide open; EF "The Bridge" ("graduated 2023 or later") is open to you; Prototype Fund "Up and Coming" is open via enrolment.
+2. Master BAföG until **Oct 2027**; you drop it for anything ≥ €1,000/month → every stipend in the lists clears that bar. Hard deadline: money by **Sep 2027**.
+3. German passport (Turkish possible later) → no visa issue inside the EU; US programs need their visa support; TÜBİTAK BİGG would need a company in Turkey, so it stays off the list.
+4. Bluetooth Presenter is private and the consultation said it **does not count** for EXIST/BSS → keep AnyPresent in the same private/free mode until a stipend decision and you stay clean.
+5. Enrolment is flexible → plan to **exmatriculate when a stipend starts** (needed for the EXIST graduate rate anyway).
+6–7. AnyPresent can run a free testing phase; both "keep it a side thing" and "apply with another idea" work → the plan below applies with **ShadowAI / doctor tools** and keeps AnyPresent as the side app (< 5 h/week, like Bluetooth Presenter).
+8. Speech engine open source only against guaranteed €50–95k → Prototype Fund requires open sourcing only **after** selection (€47.5k base is then fixed; the +€31.7k second stage is a separate application). Still, to protect AnyPresent's moat the recommended Prototype Fund project is **ShadowAI's open core**, not the speech engine.
+9–10. All ideas on the table; CaptivePortalAutoLogin and the senior tool are open-source candidates → see the pairing table in `README.md`.
+11. Urologist and psychologist contacts "in theory" → **Vision Health Pioneers** becomes a Tier-1 option (they want exactly that: developer + clinician).
+12. Green angle possible (Itemz, "phone as presenter = no e-waste") → DBU Green Start-up stays on the watch list for Itemz; the e-waste angle is too thin for DBU.
+13–14. Domain expert > second developer > business person; forced matching is fine → VHP, EF Bridge and Antler are all acceptable fallbacks; business co-founder only as last resort.
+15. Equity OK but stipends first → elite programs (YC, EF, SPC) stay as lottery tickets, not as the plan.
+16. Relocation only for an elite acceptance → other-state stipends are dropped; YC/EF/SPC stay.
+17. You would found a UG for a grant → GründungsBONUS Plus is real for AnyPresent, **but founding any company before a BSS/EXIST decision can trip the "never founded a startup before" rule at Science & Startups and complicates EXIST**. Found only when you have decided on the company route for that idea.
+18–20. €1,000 minimum, 40–60 h/week available, money needed before Sep 2027 → the sprint in November and the spring applications are sized for that.
+21–24. No prior applications or contacts; bridge stipends acceptable → Deutschlandstipendium only if you are still enrolled in July 2027.
